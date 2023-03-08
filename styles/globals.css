@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #f5f5f5;
+}
+@font-face {
+  font-family: "SkylarSans";
+  src: url("../assets/fonts/SkylarSans/SkylarSansBold.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../assets/fonts/NunitoSans/NunitoSans-Light.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSansBold";
+  src: url("../assets/fonts/NunitoSans/NunitoSans-ExtraBold.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DruckCond";
+  src: url("../assets/fonts/DruckCond/DruckCond.otf");
+  font-weight: 400;
+  font-style: normal;
+}

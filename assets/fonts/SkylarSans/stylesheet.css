@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Skylar Sans';
+    src: url('SkylarSansRegular.eot');
+    src: local('Skylar Sans'), local('SkylarSansRegular'),
+        url('SkylarSansRegular.eot?#iefix') format('embedded-opentype'),
+        url('SkylarSansRegular.woff2') format('woff2'),
+        url('SkylarSansRegular.woff') format('woff'),
+        url('SkylarSansRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skylar Sans';
+    src: url('SkylarSansBold.eot');
+    src: local('Skylar Sans Bold'), local('SkylarSansBold'),
+        url('SkylarSansBold.eot?#iefix') format('embedded-opentype'),
+        url('SkylarSansBold.woff2') format('woff2'),
+        url('SkylarSansBold.woff') format('woff'),
+        url('SkylarSansBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skylar Sans';
+    src: url('SkylarSansBoldItalic.eot');
+    src: local('Skylar Sans Bold Italic'), local('SkylarSansBoldItalic'),
+        url('SkylarSansBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('SkylarSansBoldItalic.woff2') format('woff2'),
+        url('SkylarSansBoldItalic.woff') format('woff'),
+        url('SkylarSansBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skylar Sans';
+    src: url('SkylarSansItalic.eot');
+    src: local('Skylar Sans Italic'), local('SkylarSansItalic'),
+        url('SkylarSansItalic.eot?#iefix') format('embedded-opentype'),
+        url('SkylarSansItalic.woff2') format('woff2'),
+        url('SkylarSansItalic.woff') format('woff'),
+        url('SkylarSansItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skylar Sans BoldItalic Outline';
+    src: url('SkylarSansBoldItalicOutline.eot');
+    src: local('Skylar Sans BoldItalic Outline'), local('SkylarSansBoldItalicOutline'),
+        url('SkylarSansBoldItalicOutline.eot?#iefix') format('embedded-opentype'),
+        url('SkylarSansBoldItalicOutline.woff2') format('woff2'),
+        url('SkylarSansBoldItalicOutline.woff') format('woff'),
+        url('SkylarSansBoldItalicOutline.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skylar Sans Bold Outline';
+    src: url('SkylarSansBoldOutline.eot');
+    src: local('Skylar Sans Bold Outline'), local('SkylarSansBoldOutline'),
+        url('SkylarSansBoldOutline.eot?#iefix') format('embedded-opentype'),
+        url('SkylarSansBoldOutline.woff2') format('woff2'),
+        url('SkylarSansBoldOutline.woff') format('woff'),
+        url('SkylarSansBoldOutline.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skylar Sans Italic Outline';
+    src: url('SkylarSansItalicOutline.eot');
+    src: local('Skylar Sans Italic Outline'), local('SkylarSansItalicOutline'),
+        url('SkylarSansItalicOutline.eot?#iefix') format('embedded-opentype'),
+        url('SkylarSansItalicOutline.woff2') format('woff2'),
+        url('SkylarSansItalicOutline.woff') format('woff'),
+        url('SkylarSansItalicOutline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skylar Sans Regular Outline';
+    src: url('SkylarSansRegularOutline.eot');
+    src: local('Skylar Sans Regular Outline'), local('SkylarSansRegularOutline'),
+        url('SkylarSansRegularOutline.eot?#iefix') format('embedded-opentype'),
+        url('SkylarSansRegularOutline.woff2') format('woff2'),
+        url('SkylarSansRegularOutline.woff') format('woff'),
+        url('SkylarSansRegularOutline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
