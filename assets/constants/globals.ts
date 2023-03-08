@@ -14,6 +14,22 @@ export const SKILLS = [
   "Open source",
 ];
 
+export const EXPERIENCE = [
+  "JavaScript",
+  "TypeScript",
+  "React / React Native",
+  "Responsive Design",
+  "APIs",
+  "Flutter",
+  "Docker",
+  "Nest.js",
+  "REST API",
+  "Linux — Git",
+  "GitHub",
+  "Android",
+  "Open source",
+];
+
 export const EDUCATION = [
   {
     title: "COMPUTER ENGINEERING DIPLOMA FROM MANAGEMENT",

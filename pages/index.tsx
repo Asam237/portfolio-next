@@ -1,6 +1,7 @@
 import {
   CONTACT,
   EDUCATION,
+  EXPERIENCE,
   PROJECT,
   SKILLS,
 } from "../assets/constants/globals";
@@ -79,7 +80,7 @@ export default function Home() {
               <Menu text="EXPERIENCE" />
               <div>
                 <ul>
-                  {SKILLS.map((item, index) => {
+                  {EXPERIENCE.map((item, index) => {
                     return (
                       <li key={index} className="flex items-center">
                         <span className="mr-4">&mdash;</span>
