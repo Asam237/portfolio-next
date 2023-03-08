@@ -15,12 +15,12 @@ export const SKILLS = [
 ];
 
 export const EXPERIENCE = [
+  "Flutter",
+  "React / React Native",
   "JavaScript",
   "TypeScript",
-  "React / React Native",
   "Responsive Design",
   "APIs",
-  "Flutter",
   "Docker",
   "Nest.js",
   "REST API",
