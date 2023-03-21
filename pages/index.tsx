@@ -18,7 +18,7 @@ export default function Home() {
       <div className="container mx-auto">
         <div className="flex">
           <Aside />
-          <div className="px-[17.22rem] py-[6.1rem]">
+          <div className="px-[6rem] lg:px-[17.22rem] py-[6.1rem]">
             <div>
               <Text type="subTitle" text="Passionate" />
               <Text type="title" text="Software" />
