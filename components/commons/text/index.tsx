@@ -81,20 +81,19 @@ export const Text = ({ type, text, link, myStyle, ...props }: TextProps) => {
   }
   if (type === "menuitalic") {
     return (
-      <a
-        href={link}
-        className="font-normal italic text-sm leading-[120%] text-[#181F1C] tracking-[0.01rem]"
+      <p
+        className="font-normal italic text-xl lg:text-base leading-[120%] text-[#181F1C] tracking-[0.01rem]"
         style={{ fontFamily: "NunitoSans" }}
       >
         {text}
-      </a>
+      </p>
     );
   }
   if (type === "menulinkbold") {
     return (
       <a
         href={link}
-        className="font-semibold text-sm leading-[120%] text-[#181F1C] tracking-[0.01rem]"
+        className="font-semibold text-xl lg:text-base leading-[120%] text-[#181F1C] tracking-[0.01rem]"
         style={{ fontFamily: "NunitoSans" }}
       >
         {text}

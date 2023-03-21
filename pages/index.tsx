@@ -107,7 +107,8 @@ export default function Home() {
                                   item.role!.map((item, index) => {
                                     return (
                                       <li key={index}>
-                                        <p className="font-normal text-sm leading-[160%] tracking-[0.01rem]" style={{ fontFamily: "NunitoSans" }}><span className="mr-2">&#x2981;</span>{item}</p>
+                                        <p className="font-normal text-xl lg:text-base leading-[160%] tracking-[0.01rem]" style={{ fontFamily: "NunitoSans" }}><span className="mr-2">&#x2981;</span>{item}</p>
+
                                       </li>
                                     )
                                   })
