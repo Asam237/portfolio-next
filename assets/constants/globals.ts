@@ -45,11 +45,11 @@ export const EDUCATION = [
 
 export const PROJECT = [
   {
-    name: "JOBSIKA",
+    name: "Jobsika",
     link: "http://github.com/osscameroon/jobsika",
   },
   {
-    name: "ONACUT",
+    name: "Onacut",
     link: "https://github.com/osscameroon/onacut",
   },
   {
@@ -57,7 +57,7 @@ export const PROJECT = [
     link: "https://github.com/Asam237/reservation_app",
   },
   {
-    name: "REMIX CHALLENGE UI",
+    name: "Remix Challenge UI",
     link: "https://github.com/Asam237/ui-design-remix",
   },
 ];
