@@ -1,15 +1,15 @@
 export const SKILLS = [
   "JavaScript",
   "TypeScript",
-  "React / React Native",
+  "React/Next",
   "Responsive Design",
-  "APIs",
   "Flutter",
   "Docker",
   "Nest.js",
   "REST API",
-  "Linux — Git",
-  "GitHub",
+  "Linux",
+  "VueJS/Nuxt",
+  "Git",
   "Android",
   "Open source",
 ];
@@ -17,38 +17,35 @@ export const SKILLS = [
 export const EXPERIENCE = [
   {
     title: "Software Developer",
-    project: "Onacut",
     structure: "OSS CAMEROON",
     periode: "Sept 2021 - Present",
     city: "Cameroon",
-    role: ["Frontend Developer", "Setting up the CI/CD pipeline"]
+    role: ["Frontend Developer", "Using github actions", "Dockerise applications"]
   },
   {
     title: "Software Developer",
-    project: "Itrade",
     structure: "DIGITRADE",
     periode: "Jun 2022 - Feb 2023",
-    city: "Douala, Cameroon",
+    city: "Cameroon - Remote",
     role: ["Frontend Developer", "Mobile Developer"]
   },
   {
     title: "Software Developer",
-    project: "",
     structure: "LAgence Digital",
     periode: "March 2022 - Jul 2022 & Feb 2023 - Present",
-    city: "Douala, Cameroon",
+    city: "Cameroon - Remote",
     role: ["Frontend Developer", "Mobile Developer", "Setting up the CI/CD pipeline", "Dockerise applications"]
   },
 ];
 export const EDUCATION = [
   {
     title: "COMPUTER ENGINEERING DIPLOMA FROM MANAGEMENT",
-    school: "NATIONAL SCHOOL HIGHER POLYTECHNIC OF MAROUA",
+    school: "National School Higher Polytechnic Of Maroua",
     date: "2021",
   },
   {
     title: "BACCALAUREATE C",
-    school: "PROTESTANT COLLEGE OF MOKOLO",
+    school: "Protestant College Of Mokolo",
     date: "2016",
   },
 ];

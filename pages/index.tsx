@@ -10,6 +10,9 @@ import { Text } from "../components/commons/text";
 import { Menu } from "../components/menu";
 import Image from "next/image";
 import quote from "../assets/images/quote.png";
+import github from "../assets/images/github.png";
+import linkedin from "../assets/images/linkedin.png";
+import clock from "../assets/images/clock.png";
 import Link from "next/link";
 
 export default function Home() {
@@ -32,6 +35,9 @@ export default function Home() {
                   text="I love architecting software and developing elegant solutions to complex problems"
                   myStyle="pt-[2.2rem]"
                 />
+                <a className="cursor-pointer" href="https://drive.google.com/file/d/1SIXrMhjiX02HKr_ZKA2jdGAarRmUABGW/view">
+                  <p className="pt-[2.5rem] font-[300] text-[1.8rem] leading-[140%] text-gray-700 tracking-[0.01rem]"><span className="mr-2">&#x22B3;</span>Resume</p>
+                </a>
               </div>
               <div className="pt-[9.3rem] xl:w-[34.77rem]" id="skills">
                 <div>
@@ -175,6 +181,23 @@ export default function Home() {
                       </li>
                     );
                   })}
+                  <div className="flex flex-row mt-3">
+                    <li className="mr-4">
+                      <a href="#togithub">
+                        <Image alt="github" src={github} className="w-10 h-10" />
+                      </a>
+                    </li>
+                    <li className="mr-4">
+                      <a href="#togithub">
+                        <Image alt="linkedin" src={linkedin} className="w-10 h-10" />
+                      </a>
+                    </li>
+                    <li className="mr-4">
+                      <a href="#togithub">
+                        <Image alt="wakatime" src={clock} className="w-10 h-10" />
+                      </a>
+                    </li>
+                  </div>
                 </ul>
               </div>
             </div>
