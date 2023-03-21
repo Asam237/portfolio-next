@@ -183,17 +183,17 @@ export default function Home() {
                   })}
                   <div className="flex flex-row mt-3">
                     <li className="mr-4">
-                      <a href="#togithub">
+                      <a href="http://github.com/Asam237">
                         <Image alt="github" src={github} className="w-10 h-10" />
                       </a>
                     </li>
                     <li className="mr-4">
-                      <a href="#togithub">
+                      <a href="https://www.linkedin.com/in/abba-sali-aboubakar-mamate/">
                         <Image alt="linkedin" src={linkedin} className="w-10 h-10" />
                       </a>
                     </li>
                     <li className="mr-4">
-                      <a href="#togithub">
+                      <a href="https://wakatime.com/@asam">
                         <Image alt="wakatime" src={clock} className="w-10 h-10" />
                       </a>
                     </li>
