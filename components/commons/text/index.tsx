@@ -79,6 +79,17 @@ export const Text = ({ type, text, link, myStyle, ...props }: TextProps) => {
       </a>
     );
   }
+  if (type === "menuitalic") {
+    return (
+      <a
+        href={link}
+        className="font-normal italic text-sm leading-[120%] text-[#181F1C] tracking-[0.01rem]"
+        style={{ fontFamily: "NunitoSans" }}
+      >
+        {text}
+      </a>
+    );
+  }
   if (type === "menulinkbold") {
     return (
       <a

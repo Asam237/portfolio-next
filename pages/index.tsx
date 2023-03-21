@@ -82,10 +82,26 @@ export default function Home() {
                 <ul>
                   {EXPERIENCE.map((item, index) => {
                     return (
-                      <li key={index} className="flex items-center">
-                        <span className="mr-4">&mdash;</span>
-                        <Text type="list" text={item} />
+                      <li
+                        className="flex flex-col xl:flex-row xl:justify-between xl:items-center"
+                        key={index}
+                      >
+                        <div>
+                          <div className="flex items-center">
+                            <div className="flex items-center"><Text type="diplome" text={item.structure} />
+                            <span className="text-2xl text-gray-500 mx-4">&mdash;</span>
+                            <Text type="diplome" text={item.title} />
+                            </div>
+                          </div>
+                          <div className="md:pb-6">
+                            <Text text={item.periode} type="menuitalic" />
+                          </div>
+                        </div>
+                        <div className="pb-4 md:pb-0">
+                          <Text text={item.city} type="menulinkbold" />
+                        </div>
                       </li>
+
                     );
                   })}
                 </ul>

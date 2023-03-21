@@ -15,21 +15,35 @@ export const SKILLS = [
 ];
 
 export const EXPERIENCE = [
-  "Flutter",
-  "React / React Native",
-  "JavaScript",
-  "TypeScript",
-  "Responsive Design",
-  "APIs",
-  "Docker",
-  "Nest.js",
-  "REST API",
-  "Linux — Git",
-  "GitHub",
-  "Android",
-  "Open source",
+  {
+    title: "Frontend Developer",
+    project: "Onacut",
+    structure: "OSS CAMEROON",
+    periode: "Sept 2021 - Present",
+    city: "Cameroon",
+  },
+  {
+    title: "Frontend Developer",
+    project: "Jobsika",
+    structure: "OSS CAMEROON",
+    periode: "Dec 2021 - Present",
+    city: "Cameroon",
+  },
+  {
+    title: "Frontend Developer",
+    project: "Itrade",
+    structure: "DIGITRADE",
+    periode: "Jun 2022 - Feb 2023",
+    city: "Douala, Cameroon",
+  },
+  {
+    title: "Software Developer",
+    project: "",
+    structure: "LAgence Digital",
+    periode: "March 2022 - Jul 2022 & Feb 2023 - Present",
+    city: "Douala, Cameroon",
+  },
 ];
-
 export const EDUCATION = [
   {
     title: "COMPUTER ENGINEERING DIPLOMA FROM MANAGEMENT",
