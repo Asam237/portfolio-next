@@ -41,7 +41,7 @@ export const Text = ({ type, text, link, myStyle, ...props }: TextProps) => {
   if (type === "name") {
     return (
       <h4
-        className="font-[950] text-[45rem] text-[#696d6b] text-center"
+        className="font-[950] text-[45rem] text-[#696d6b] text-center hidden lg:flex"
         style={{ fontFamily: "DruckCond" }}
       >
         {text}

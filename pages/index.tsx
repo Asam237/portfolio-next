@@ -123,12 +123,13 @@ export default function Home() {
               <Menu text="SELECTED PROJECTS" />
               <div>
                 <ul>
+                  <a href="hello">Hello</a>
                   {PROJECT.map((item, index) => {
                     return (
                       <>
-                        <Link key={index} href={item.link} className="pb-2 flex items-center">
-                          <Text type="list" text={item.name} myStyle="cursor-pointer hover:underline" />
-                        </Link>
+                        <a key={index} href={item.link} className="pb-2 flex items-center cursor-pointer">
+                          {item.name}
+                        </a>
                       </>
                     );
                   })}
