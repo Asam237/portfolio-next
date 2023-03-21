@@ -24,13 +24,6 @@ export const EXPERIENCE = [
   },
   {
     title: "Frontend Developer",
-    project: "Jobsika",
-    structure: "OSS CAMEROON",
-    periode: "Dec 2021 - Present",
-    city: "Cameroon",
-  },
-  {
-    title: "Frontend Developer",
     project: "Itrade",
     structure: "DIGITRADE",
     periode: "Jun 2022 - Feb 2023",
