@@ -31,7 +31,7 @@ export const Text = ({ type, text, link, myStyle, ...props }: TextProps) => {
   if (type === "section") {
     return (
       <h4
-        className="font-extrabold text-[.8rem] leading-[1.2rem] text-[#181F1C] tracking-[0.01rem]"
+        className="font-extrabold text-[1.5rem] lg:text-[.8rem] leading-[1.2rem] text-[#181F1C] tracking-[0.01rem]"
         style={{ fontFamily: "NunitoSansBold" }}
       >
         {text}
@@ -51,7 +51,7 @@ export const Text = ({ type, text, link, myStyle, ...props }: TextProps) => {
   if (type === "author") {
     return (
       <p
-        className={`font-[300] text-[.8rem] leading-[150%] text-[#181F1C] tracking-[0.01rem] ${myStyle}`}
+        className={`font-[300] text-[1.5rem] lg:text-[.8rem] leading-[150%] text-[#181F1C] tracking-[0.01rem] ${myStyle}`}
         style={{ fontFamily: "NunitoSans" }}
       >
         {text}
