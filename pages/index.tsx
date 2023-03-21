@@ -89,12 +89,25 @@ export default function Home() {
                         <div>
                           <div className="flex items-center">
                             <div className="flex items-center"><Text type="diplome" text={item.structure} />
-                            <span className="text-2xl text-gray-500 mx-4">&mdash;</span>
-                            <Text type="diplome" text={item.title} />
+                              <span className="text-2xl text-gray-500 mx-4">&mdash;</span>
+                              <Text type="diplome" text={item.title} />
                             </div>
                           </div>
                           <div className="md:pb-6">
                             <Text text={item.periode} type="menuitalic" />
+                            <div className="pt-1">
+                              <ul>
+                                {
+                                  item.role!.map((item, index) => {
+                                    return (
+                                      <li key={index}>
+                                        <p className="font-normal text-sm leading-[160%] tracking-[0.01rem]" style={{ fontFamily: "NunitoSans" }}><span className="mr-2">&#x2981;</span>{item}</p>
+                                      </li>
+                                    )
+                                  })
+                                }
+                              </ul>
+                            </div>
                           </div>
                         </div>
                         <div className="pb-4 md:pb-0">

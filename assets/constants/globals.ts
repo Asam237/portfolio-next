@@ -16,18 +16,20 @@ export const SKILLS = [
 
 export const EXPERIENCE = [
   {
-    title: "Frontend Developer",
+    title: "Software Developer",
     project: "Onacut",
     structure: "OSS CAMEROON",
     periode: "Sept 2021 - Present",
     city: "Cameroon",
+    role: ["Frontend Developer", "Setting up the CI/CD pipeline"]
   },
   {
-    title: "Frontend Developer",
+    title: "Software Developer",
     project: "Itrade",
     structure: "DIGITRADE",
     periode: "Jun 2022 - Feb 2023",
     city: "Douala, Cameroon",
+    role: ["Frontend Developer", "Mobile Developer"]
   },
   {
     title: "Software Developer",
@@ -35,6 +37,7 @@ export const EXPERIENCE = [
     structure: "LAgence Digital",
     periode: "March 2022 - Jul 2022 & Feb 2023 - Present",
     city: "Douala, Cameroon",
+    role: ["Frontend Developer", "Mobile Developer", "Setting up the CI/CD pipeline", "Dockerise applications"]
   },
 ];
 export const EDUCATION = [
