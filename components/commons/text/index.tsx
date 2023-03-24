@@ -68,11 +68,22 @@ export const Text = ({ type, text, link, myStyle, ...props }: TextProps) => {
       </p>
     );
   }
+  if (type === "menulink2") {
+    return (
+      <a
+        href={link}
+        className="font-bold text-lg leading-[120%] text-[#181F1C] tracking-[0.01rem]"
+        style={{ fontFamily: "NunitoSans" }}
+      >
+        {text}
+      </a>
+    );
+  }
   if (type === "menulink") {
     return (
       <a
         href={link}
-        className="font-normal text-sm leading-[120%] text-[#181F1C] tracking-[0.01rem]"
+        className="font-semibold text-base leading-[120%] text-[#181F1C] tracking-[0.01rem]"
         style={{ fontFamily: "NunitoSans" }}
       >
         {text}

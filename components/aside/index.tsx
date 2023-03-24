@@ -30,7 +30,7 @@ export const Aside = () => {
     <aside className="hidden xl:flex xl:fixed top-[3.3rem] left-[2.4rem] right-0">
       <div className="flex flex-col h-[100vh]">
         <Link href="/">
-          <Text type="section" text="Abba Sali" />
+          <Text type="menulink2" text="Abba Sali" />
         </Link>
         <nav className="pt-[6.6rem]">
           <ul>
