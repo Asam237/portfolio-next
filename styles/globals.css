@@ -43,17 +43,21 @@ body {
 .light h2,
 .light h3,
 .light .link,
+.light span,
 .light h4 {
   color: black;
+  border-color: black;
 }
 .dark p,
 .dark h1,
 .dark a,
 .dark h2,
+.dark span,
 .dark h3,
 .dark .link,
 .dark h4 {
   color: white;
+  border-color: white;
 }
 
 .light button {

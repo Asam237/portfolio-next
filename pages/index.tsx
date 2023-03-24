@@ -100,6 +100,15 @@ export default function Home() {
                                     )
                                   })
                                 }
+                                <div className="ml-4 mt-3 mb-8">
+                                  {
+                                    item.techs!.map((item, index) => {
+                                      return (
+                                        <span key={index} className="border px-4 py-2 rounded-full text-xs mr-2">{item}</span>
+                                      )
+                                    })
+                                  }
+                                </div>
                               </ul>
                             </div>
                           </div>
