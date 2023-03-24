@@ -29,7 +29,7 @@ export const EXPERIENCE = [
     periode: "Jun 2022 - Feb 2023",
     city: "Cameroon - Remote",
     role: ["I was in charge of the front-end with the following technologies", "I participated in the development of the mobile application with Flutter"],
-    techs: ["React", "Axios", "Tailwind", "Material UI"]
+    techs: ["React", "Flutter", "Axios", "Tailwind", "Material UI"]
   },
   {
     title: "Software Developer",
@@ -37,7 +37,7 @@ export const EXPERIENCE = [
     periode: "March 2022 - Jul 2022 & Feb 2023 - Present",
     city: "Cameroon - Remote",
     role: ["I participated in the development of the web application", "I participated in the development of the mobile application with Flutter", "i setting up the CI/CD pipeline", "I docked the NuxtJS and NestJS applications"],
-    techs: ["Nuxt", "Tailwind", "Axios", "Docker", "Gh-action"]
+    techs: ["Nuxt", "Flutter", "Tailwind", "Axios", "Docker", "Gh-action"]
   },
 ];
 export const EDUCATION = [
