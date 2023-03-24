@@ -86,10 +86,10 @@ export default function Home() {
                               <Text type="diplome" text={item.title} />
                             </div>
                           </div>
-                          <div className="md:pb-6">
+                          <div className="md:pb-6 ml-4">
                             <Text text={item.periode} type="menuitalic" />
                             <div className="pt-1">
-                              <ul className="ml-4">
+                              <ul>
                                 {
                                   item.role!.map((item, index) => {
                                     return (
@@ -100,7 +100,7 @@ export default function Home() {
                                     )
                                   })
                                 }
-                                <div className="ml-4 mt-3 mb-8">
+                                <div className="mt-4 mb-8">
                                   {
                                     item.techs!.map((item, index) => {
                                       return (

@@ -93,7 +93,7 @@ export const Text = ({ type, text, link, myStyle, ...props }: TextProps) => {
   if (type === "menuitalic") {
     return (
       <p
-        className="font-normal italic text-xl lg:text-base leading-[120%] text-[#181F1C] tracking-[0.01rem]"
+        className="font-normal italic text-sm py-2 leading-[120%] text-[#181F1C] tracking-[0.01rem]"
         style={{ fontFamily: "NunitoSans" }}
       >
         {text}
