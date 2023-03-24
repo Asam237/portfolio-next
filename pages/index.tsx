@@ -14,8 +14,9 @@ import github from "../assets/images/github.png";
 import linkedin from "../assets/images/linkedin.png";
 import clock from "../assets/images/clock.png";
 import Link from "next/link";
-import { HiLightBulb } from "react-icons/hi"
+import { HiLightBulb, HiClock } from "react-icons/hi"
 import { useEffect, useState } from "react";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 
 export default function Home() {
   const [theme, setTheme] = useState('light');
@@ -200,19 +201,19 @@ export default function Home() {
                   })}
                   <div className="flex flex-row mt-3">
                     <li className="mr-4">
-                      <a href="http://github.com/Asam237">
-                        <Image alt="github" src={github} className="w-10 h-10" />
-                      </a>
+                      <Link href="http://github.com/Asam237">
+                        <AiFillGithub className="w-10 h-10 link" />
+                      </Link>
                     </li>
                     <li className="mr-4">
-                      <a href="https://www.linkedin.com/in/abba-sali-aboubakar-mamate/">
-                        <Image alt="linkedin" src={linkedin} className="w-10 h-10" />
-                      </a>
+                      <Link href="https://www.linkedin.com/in/abba-sali-aboubakar-mamate/">
+                        <AiFillLinkedin className="w-10 h-10 link" />
+                      </Link>
                     </li>
                     <li className="mr-4">
-                      <a href="https://wakatime.com/@asam">
-                        <Image alt="wakatime" src={clock} className="w-10 h-10" />
-                      </a>
+                      <Link href="https://wakatime.com/@asam">
+                        <HiClock className="w-10 h-10 link" />
+                      </Link>
                     </li>
                   </div>
                 </ul>
