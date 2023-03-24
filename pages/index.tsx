@@ -8,8 +8,6 @@ import {
 import { Aside } from "../components/aside";
 import { Text } from "../components/commons/text";
 import { Menu } from "../components/menu";
-import Image from "next/image";
-import quote from "../assets/images/quote.png";
 import Link from "next/link";
 import { HiLightBulb, HiClock } from "react-icons/hi"
 import { useEffect, useState } from "react";
