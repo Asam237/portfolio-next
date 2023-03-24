@@ -14,14 +14,30 @@ import github from "../assets/images/github.png";
 import linkedin from "../assets/images/linkedin.png";
 import clock from "../assets/images/clock.png";
 import Link from "next/link";
+import { HiLightBulb } from "react-icons/hi"
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [theme, setTheme] = useState('light');
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark')
+    } else {
+      setTheme('light')
+    }
+  }
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme])
   return (
-    <div className="bg-[#f5f5f5] h-screen">
+    <div className="h-screen">
       <div className="container mx-auto">
         <div className="flex">
           <Aside />
-          <div className="px-[6rem] lg:px-[17.22rem] py-[6.1rem]">
+          <div className="hidden lg:flex absolute mt-10 right-0">
+            <HiLightBulb className="mt-10 lg:mt-0 mr-[2rem] lg:mr-[6rem] link cursor-pointer" onClick={toggleTheme} size={30} />
+          </div>
+          <div className="px-[6rem] lg:px-[17rem] py-[6rem]">
             <div>
               <Text type="subTitle" text="Passionate" />
               <Text type="title" text="Software" />
