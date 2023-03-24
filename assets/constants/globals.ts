@@ -20,21 +20,21 @@ export const EXPERIENCE = [
     structure: "OSS CAMEROON",
     periode: "Sept 2021 - Present",
     city: "Cameroon",
-    role: ["Frontend Developer", "Using github actions", "Dockerise applications"]
+    role: ["I was in charge of the front-end with the following technologies: Tailwind, React, Nuxt, Axios", "I used Gh-action to lint and deploy automatically", "I parse and format a Json file using a bash script", "I consumed the backend elements", "I docked the NuxtJS application"]
   },
   {
     title: "Software Developer",
     structure: "DIGITRADE",
     periode: "Jun 2022 - Feb 2023",
     city: "Cameroon - Remote",
-    role: ["Frontend Developer", "Mobile Developer"]
+    role: ["I was in charge of the front-end with the following technologies: React, Material UI, Axios", "I participated in the development of the mobile application with Flutter"]
   },
   {
     title: "Software Developer",
     structure: "LAgence Digital",
     periode: "March 2022 - Jul 2022 & Feb 2023 - Present",
     city: "Cameroon - Remote",
-    role: ["Frontend Developer", "Mobile Developer", "Setting up the CI/CD pipeline", "Dockerise applications"]
+    role: ["I participated in the development of the web application with NuxtJS", "I participated in the development of the mobile application with Flutter", "i setting up the CI/CD pipeline", "I docked the NuxtJS and NestJS applications"]
   },
 ];
 export const EDUCATION = [

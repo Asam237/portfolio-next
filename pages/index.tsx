@@ -10,9 +10,6 @@ import { Text } from "../components/commons/text";
 import { Menu } from "../components/menu";
 import Image from "next/image";
 import quote from "../assets/images/quote.png";
-import github from "../assets/images/github.png";
-import linkedin from "../assets/images/linkedin.png";
-import clock from "../assets/images/clock.png";
 import Link from "next/link";
 import { HiLightBulb, HiClock } from "react-icons/hi"
 import { useEffect, useState } from "react";
@@ -56,33 +53,6 @@ export default function Home() {
                   <p className="pt-[2.5rem] font-[300] text-[1.8rem] leading-[140%] text-gray-700 tracking-[0.01rem]"><span className="mr-2">&#x22B3;</span>Resume</p>
                 </a>
               </div>
-              <div className="pt-[9.3rem] xl:w-[34.77rem]" id="skills">
-                <div>
-                  <div className="flex flex-row ml-[-6rem]">
-                    <Image
-                      src={quote}
-                      alt="image"
-                      className="w-[3rem] h-[4.3rem]"
-                    />
-                    <Image
-                      src={quote}
-                      alt="image"
-                      className="w-[3rem] h-[4.3rem] pl-[.4rem]"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <Text
-                    type="citation"
-                    text="A problem without a solution is a poorly stated problem."
-                  />
-                  <Text
-                    type="author"
-                    text="Albert Einstein"
-                    myStyle="pt-[2.2rem]"
-                  />
-                </div>
-              </div>
             </div>
             <div className="pt-[10.5rem]">
               <Menu text="SKILLS" />
@@ -91,7 +61,7 @@ export default function Home() {
                   {SKILLS.map((item, index) => {
                     return (
                       <li key={index} className="flex items-center">
-                        <span className="mr-4">&mdash;</span>
+                        <span className="mr-4 link">&mdash;</span>
                         <Text type="list" text={item} />
                       </li>
                     );
@@ -119,7 +89,7 @@ export default function Home() {
                           <div className="md:pb-6">
                             <Text text={item.periode} type="menuitalic" />
                             <div className="pt-1">
-                              <ul>
+                              <ul className="ml-4">
                                 {
                                   item.role!.map((item, index) => {
                                     return (
@@ -134,7 +104,7 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                        <div className="pb-4 md:pb-0">
+                        <div className="pb-6 pt-0  md:pt-8 md:pb-0">
                           <Text text={item.city} type="menulinkbold" />
                         </div>
                       </li>
