@@ -63,8 +63,8 @@ export const PROJECT = [
     link: "https://github.com/osscameroon/onacut",
   },
   {
-    name: "Flutter Reservation App",
-    link: "https://github.com/Asam237/reservation_app",
+    name: "WakaTime Web Scraping",
+    link: "http://github.com/Asam237/wakatime-scraping-nodejs",
   },
   {
     name: "Remix Challenge UI",
