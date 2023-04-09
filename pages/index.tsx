@@ -70,7 +70,7 @@ export default function Home() {
               <ul className="flex flex-col items-end justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 lg:hidden text-gray-600">
                 {
                   navs.map((item: any, index) => {
-                    return <li key={index} className="text-4xl font-semibold" style={{fontFamily: "SkylarSans"}}><Link href={item.link}>{item.name}</Link></li>
+                    return <li key={index} className="text-4xl font-semibold" style={{ fontFamily: "SkylarSans" }}><Link href={item.link}>{item.name}</Link></li>
                   })
                 }
               </ul>
@@ -174,7 +174,6 @@ export default function Home() {
                       >
                         <div>
                           <div className="flex items-center">
-                            <span className="mr-4">&mdash;</span>
                             <Text type="diplome" text={item.title} />
                           </div>
                           <div className="pt-2 md:pb-6">
