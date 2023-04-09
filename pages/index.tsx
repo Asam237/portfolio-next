@@ -11,7 +11,7 @@ import { Menu } from "../components/menu";
 import Link from "next/link";
 import { HiLightBulb, HiClock } from "react-icons/hi"
 import { useEffect, useState } from "react";
-import { AiFillGithub, AiFillLinkedin, AiOutlineMenu } from "react-icons/ai"
+import { AiFillCloseCircle, AiFillGithub, AiFillLinkedin, AiOutlineMenu } from "react-icons/ai"
 
 const navs = [
   {
@@ -61,7 +61,7 @@ export default function Home() {
             <div className="flex lg:hidden justify-end" onClick={() => {
               setNavBar(!navbar)
             }}>
-              <AiOutlineMenu size={80} />
+              {navbar === false ? <AiOutlineMenu size={80} /> : <AiFillCloseCircle size={80} />}
             </div>
             <div
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'
