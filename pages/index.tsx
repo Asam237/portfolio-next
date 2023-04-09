@@ -11,7 +11,30 @@ import { Menu } from "../components/menu";
 import Link from "next/link";
 import { HiLightBulb, HiClock } from "react-icons/hi"
 import { useEffect, useState } from "react";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
+import { AiFillGithub, AiFillLinkedin, AiOutlineMenu } from "react-icons/ai"
+
+const navs = [
+  {
+    name: "About",
+    link: "#about",
+  },
+  {
+    name: "Skills",
+    link: "#skills",
+  },
+  {
+    name: "Experience",
+    link: "#experience",
+  },
+  {
+    name: "Education",
+    link: "#education",
+  },
+  {
+    name: "Contact",
+    link: "#contact",
+  },
+];
 
 export default function Home() {
   const [theme, setTheme] = useState('light');
@@ -25,6 +48,7 @@ export default function Home() {
   useEffect(() => {
     document.body.className = theme;
   }, [theme])
+  const [navbar, setNavBar] = useState(false)
   return (
     <div className="h-screen">
       <div className="container mx-auto">
@@ -34,6 +58,23 @@ export default function Home() {
             <HiLightBulb className="mt-10 lg:mt-0 mr-[2rem] lg:mr-[6rem] link cursor-pointer" onClick={toggleTheme} size={30} />
           </div>
           <div className="px-[6rem] lg:px-[17rem] py-[6rem]">
+            <div className="flex lg:hidden justify-end" onClick={() => {
+              setNavBar(!navbar)
+            }}>
+              <AiOutlineMenu size={80} />
+            </div>
+            <div
+              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'
+                }`}
+            >
+              <ul className="flex flex-col items-end justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 lg:hidden text-gray-600">
+                {
+                  navs.map((item: any, index) => {
+                    return <li key={index} className="text-4xl font-semibold" style={{fontFamily: "SkylarSans"}}><Link href={item.link}>{item.name}</Link></li>
+                  })
+                }
+              </ul>
+            </div>
             <div>
               <Text type="subTitle" text="Passionate" />
               <Text type="title" text="Software" />
@@ -47,9 +88,9 @@ export default function Home() {
                   text="I love architecting software and developing elegant solutions to complex problems"
                   myStyle="pt-[2.2rem]"
                 />
-                <a className="cursor-pointer" href="https://drive.google.com/file/d/1SIXrMhjiX02HKr_ZKA2jdGAarRmUABGW/view">
+                <Link className="cursor-pointer" href="https://drive.google.com/file/d/1SIXrMhjiX02HKr_ZKA2jdGAarRmUABGW/view">
                   <p className="pt-[2.5rem] font-[300] text-[1.8rem] leading-[140%] text-gray-700 tracking-[0.01rem]"><span className="mr-2">&#x22B3;</span>Resume</p>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="pt-[10.5rem]">
@@ -156,9 +197,9 @@ export default function Home() {
                   {PROJECT.map((item, index) => {
                     return (
                       <li key={index}>
-                        <a href={item.link} className="pb-2 flex items-center cursor-pointer text-[2rem] lg:text-[1.7rem] hover:underline">
+                        <Link href={item.link} className="pb-2 flex items-center cursor-pointer text-[2rem] lg:text-[1.7rem] hover:underline">
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     );
                   })}

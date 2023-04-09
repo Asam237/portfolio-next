@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface TextProps extends React.AllHTMLAttributes<HTMLElement> {
@@ -70,24 +71,24 @@ export const Text = ({ type, text, link, myStyle, ...props }: TextProps) => {
   }
   if (type === "menulink2") {
     return (
-      <a
-        href={link}
+      <Link
+        href={`${link}`}
         className="font-bold text-lg leading-[120%] text-[#181F1C] tracking-[0.01rem]"
         style={{ fontFamily: "NunitoSans" }}
       >
         {text}
-      </a>
+      </Link>
     );
   }
   if (type === "menulink") {
     return (
-      <a
-        href={link}
+      <Link
+        href={`${link}`}
         className="font-semibold text-base leading-[120%] text-[#181F1C] tracking-[0.01rem]"
         style={{ fontFamily: "NunitoSans" }}
       >
         {text}
-      </a>
+      </Link>
     );
   }
   if (type === "menuitalic") {
@@ -102,13 +103,13 @@ export const Text = ({ type, text, link, myStyle, ...props }: TextProps) => {
   }
   if (type === "menulinkbold") {
     return (
-      <a
-        href={link}
+      <Link
+        href={`${link}`}
         className="font-semibold text-xl lg:text-base leading-[120%] text-[#181F1C] tracking-[0.01rem]"
         style={{ fontFamily: "NunitoSans" }}
       >
         {text}
-      </a>
+      </Link>
     );
   }
   if (type === "citation") {
