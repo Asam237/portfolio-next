@@ -38,9 +38,9 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="flex">
             <Aside />
-            <div className="hidden lg:flex absolute mt-10 right-0">
+            <div className="hidden xl:flex absolute mt-10 right-0">
               <HiLightBulb
-                className="mt-10 lg:mt-0 mr-[2rem] lg:mr-[6rem] link cursor-pointer"
+                className="mt-10 xl:mt-0 mr-[2rem] xl:mr-[6rem] link cursor-pointer"
                 onClick={toggleTheme}
                 size={30}
               />
@@ -59,7 +59,7 @@ export default function Home() {
                 )}
               </div>
               <div
-                className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+                className={`flex-1 justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0 ${
                   navbar ? "block" : "hidden"
                 }`}
               >
