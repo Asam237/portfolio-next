@@ -1,0 +1,15 @@
+export const skillsItems: string[] = [
+  "JavaScript",
+  "TypeScript",
+  "React/Next",
+  "Responsive Design",
+  "Flutter",
+  "Docker",
+  "Nest.js",
+  "REST API",
+  "Linux",
+  "VueJS/Nuxt",
+  "Git",
+  "Android",
+  "Open source",
+];

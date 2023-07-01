@@ -1,29 +1,8 @@
 import Link from "next/link";
 import React from "react";
+import { asideItems } from "../../data/aside";
+import { AsideType } from "../../types";
 import { Text } from "../commons/text";
-
-const navs = [
-  {
-    name: "About",
-    link: "#about",
-  },
-  {
-    name: "Skills",
-    link: "#skills",
-  },
-  {
-    name: "Experience",
-    link: "#experience",
-  },
-  {
-    name: "Education",
-    link: "#education",
-  },
-  {
-    name: "Contact",
-    link: "#contact",
-  },
-];
 
 export const Aside = () => {
   return (
@@ -34,10 +13,10 @@ export const Aside = () => {
         </Link>
         <nav className="pt-[6.6rem]">
           <ul>
-            {navs.map((item: any, index) => {
+            {asideItems.map((item: AsideType, index) => {
               return (
                 <li key={index}>
-                  <Text type="menulink" link={item.link} text={item.name} />
+                  <Text type="menulink" link={item.pathname} text={item.name} />
                 </li>
               );
             })}
