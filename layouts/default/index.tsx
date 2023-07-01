@@ -27,8 +27,8 @@ type LayoutProps = {
 
 export default function Layout({
   seo = {
-    description: "Abba SAli Aboubakar Mamate",
-    title: "Abba SAli Aboubakar Mamate",
+    description: "Abba Sali Aboubakar Mamate",
+    title: "Abba Sali Aboubakar Mamate",
   },
   children,
   className,
