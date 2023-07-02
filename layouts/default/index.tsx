@@ -10,16 +10,6 @@ const Cursor: any = dynamic(
   { ssr: false }
 );
 
-const LenisSmoothScroll: any = dynamic(
-  () =>
-    import("../../components/scroll").then(
-      ({ LenisSmoothScroll }) => LenisSmoothScroll
-    ),
-  {
-    ssr: false,
-  }
-);
-
 type LayoutProps = {
   seo?: SEOProps;
   className?: string;
@@ -39,7 +29,6 @@ export default function Layout({
       <CustomHead {...seo} />
       <Cursor />
       <Loader />
-      <LenisSmoothScroll />
       <div className={clsx(css.container, className)}>
         <main>{children}</main>
       </div>
