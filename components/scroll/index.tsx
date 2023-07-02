@@ -25,36 +25,7 @@ export const LenisSmoothScroll = () => {
     });
   };
 
-  useEffect(() => {
-    // Import Lenis.
-    if (!lenis) {
-      initialize()
-        .then((lenis) => setLenis(lenis))
-        .catch(() => null);
-      return;
-    }
-
-    // Lenis has been imported.
-    // Exposing to the
-    // global scope for ease of use.
-    window.lenis = lenis;
-
-    // Use only one
-    // requestAnimationFrame for your whole app.
-    rAF.current = requestFrame("write", (time: number) => {
-      lenis?.raf(time);
-    });
-
-    return () => {
-      // clean rAF.
-      rAF.current?.dispose();
-
-      // clean Lenis.
-      lenis.destroy();
-      setLenis(null);
-      window.lenis = undefined;
-    };
-  }, [lenis]);
+  useEffect(() => {}, []);
 
   // Ask Lenis to
   // manage internal navigation (hash)
