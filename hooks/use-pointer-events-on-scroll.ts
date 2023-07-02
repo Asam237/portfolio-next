@@ -1,10 +1,10 @@
-import { useEffect } from "react"
-import { gsap } from "gsap"
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 type Options = {
-  location: any // WindowLocation<unknown>
-}
+  location: any; // WindowLocation<unknown>
+};
 
 /**
  * Add pointer-events to certain
@@ -14,18 +14,18 @@ export default function usePointerEventsOnScroll({ location }: Options) {
   useEffect(() => {
     // Do not use this
     // trick on touch devices.
-    const mm = gsap.matchMedia()
+    const mm = gsap.matchMedia();
     mm.add("(hover: hover)", () => {
       // Select elements.
-      const footer = document.querySelector<HTMLElement>("#footer")
+      const footer = document.querySelector<HTMLElement>("#footer");
       const elements: HTMLElement[] = Array.prototype.slice.call(
         document.querySelector<HTMLElement>("#main")?.children
-      )
-      footer && elements.push(footer)
+      );
+      footer && elements.push(footer);
 
       elements.forEach((element) => {
-        let locked = false
-        let timerID = 0
+        let locked = false;
+        let timerID = 0;
 
         ScrollTrigger.create({
           id: `${element.classList.value}`,
@@ -35,24 +35,24 @@ export default function usePointerEventsOnScroll({ location }: Options) {
           scrub: true,
           onUpdate: () => {
             // TODO: Fonction seems to be called twice.
-            window.clearTimeout(timerID)
+            window.clearTimeout(timerID);
 
             if (!locked) {
-              gsap.set(element, { pointerEvents: "none" })
-              locked = true
+              gsap.set(element, { pointerEvents: "none" });
+              locked = true;
             }
 
             timerID = window.setTimeout(() => {
-              gsap.set(element, { pointerEvents: "auto" })
-              locked = false
-            }, 150)
+              gsap.set(element, { pointerEvents: "auto" });
+              locked = false;
+            }, 150);
           },
-        })
-      })
-    })
+        });
+      });
+    });
 
     return () => {
-      mm.revert()
-    }
-  }, [location])
+      mm.revert();
+    };
+  }, [location]);
 }
