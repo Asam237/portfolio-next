@@ -6,10 +6,6 @@ export const Cursor = () => {
   const [hasMoved, setHasMoved] = useState(false);
 
   return (
-    <div
-      ref={cursor}
-      style={{ opacity: hasMoved ? 1 : 0 }}
-      className={css.container}
-    />
+    <div style={{ opacity: hasMoved ? 1 : 0 }} className={css.container} />
   );
 };
